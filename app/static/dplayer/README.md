@@ -1,16 +1,16 @@
 <p align="center">
-<img src="https://ws4.sinaimg.cn/large/006tKfTcgy1fhu01y9uy7j305k04s3yc.jpg" alt="ADPlayer" width="100">
+<img src="https://i.imgur.com/LnPvZvO.png" alt="ADPlayer" width="100">
 </p>
 <h1 align="center">DPlayer</h1>
 
-> Wow, such a lovely HTML5 danmaku video player
+> 🍭 Wow, such a lovely HTML5 danmaku video player
 
 [![npm](https://img.shields.io/npm/v/dplayer.svg?style=flat-square)](https://www.npmjs.com/package/dplayer)
-[![npm](https://img.shields.io/npm/l/dplayer.svg?style=flat-square)](https://github.com/DIYgod/DPlayer/blob/master/LICENSE)
-[![devDependency Status](https://img.shields.io/david/dev/DIYgod/dplayer.svg?style=flat-square)](https://david-dm.org/DIYgod/DPlayer#info=devDependencies)
+[![npm](https://img.shields.io/npm/l/dplayer.svg?style=flat-square)](https://github.com/MoePlayer/DPlayer/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/dt/dplayer.svg?style=flat-square)](https://www.npmjs.com/package/dplayer)
-[![Travis](https://img.shields.io/travis/DIYgod/DPlayer.svg?style=flat-square)](https://travis-ci.org/DIYgod/DPlayer)
-[![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square)](https://github.com/DIYgod/DPlayer#donate)
+[![size](https://badge-size.herokuapp.com/MoePlayer/DPlayer/master/dist/DPlayer.min.js?compression=gzip&style=flat-square)](https://github.com/MoePlayer/DPlayer/tree/master/dist)
+[![Travis](https://img.shields.io/travis/MoePlayer/DPlayer.svg?style=flat-square)](https://travis-ci.org/MoePlayer/DPlayer)
+[![devDependency Status](https://img.shields.io/david/dev/MoePlayer/dplayer.svg?style=flat-square)](https://david-dm.org/MoePlayer/DPlayer#info=devDependencies)
 
 ## Introduction
 
@@ -21,111 +21,126 @@ DPlayer is a lovely HTML5 danmaku video player to help people build video and da
 **DPlayer supports:**
 
 - Streaming formats
-	- [HLS](https://github.com/video-dev/hls.js)
-	- [FLV](https://github.com/Bilibili/flv.js)
+    - [HLS](https://github.com/video-dev/hls.js)
+    - [FLV](https://github.com/Bilibili/flv.js)
+    - [MPEG DASH](https://github.com/Dash-Industry-Forum/dash.js)
+    - [WebTorrent](https://github.com/webtorrent/webtorrent)
+    - Any other custom streaming formats
 - Media formats
-	- MP4 H.264
-	- WebM
-	- Ogg Theora Vorbis
+    - MP4 H.264
+    - WebM
+    - Ogg Theora Vorbis
 - Features
-	- Danamku
-	- Screenshot
-	- Hotkeys
-	- Quality switching
+    - Danmaku
+    - Screenshot
+    - Hotkeys
+    - Quality switching
+    - Thumbnails
+    - Subtitle
 
 Using DPlayer on your project? [Let me know!](https://github.com/DIYgod/DPlayer/issues/31)
 
-**[Demo](http://dplayer.js.org/)**
+**[Docs](http://dplayer.js.org)**
 
-**[Docs](http://dplayer.js.org/docs)**
+**[中文文档](http://dplayer.js.org/#/zh-Hans/)**
 
-## Install
+## Thanks
 
-```
-$ npm install dplayer --save
-```
+## Special Sponsors
 
-## Quick Start
+<a href="https://www.polyv.net/?f=git_DPlayer-20190212-01" target="_blank">
+    <img width="600px" src="https://i.imgur.com/d4XabAe.png">
+</a>
 
-```html
-<link rel="stylesheet" href="dist/DPlayer.min.css">
-<div id="player1"></div>
-<script src="dist/DPlayer.min.js"></script>
-```
+<a href="https://www.9ccms.net" target="_blank">
+    <img width="330px" src="https://i.imgur.com/YBV6kfb.png">
+</a>
 
-```js
-var dp = new DPlayer({
-    element: document.getElementById('player1'),
-    video: {
-        url: 'dplayer.mp4',
-        pic: 'dplayer.png'
-    },
-    danmaku: {
-        id: 'testid',
-        api: 'https://api.prprpr.me/dplayer/'
-    }
-});
-```
+### Sponsors
 
-## Usage
+<a href="https://www.dogecloud.com/?ref=dplayer" target="_blank">
+    <img width="222px" src="https://i.imgur.com/BBKXPAp.png">
+</a>
+<a href="https://console.upyun.com/register/?invite=BkLZ2Xqob" target="_blank">
+    <img width="222px" src="https://imgur.com/apG1uKf.png">
+</a>
 
-[Read the Docs](http://dplayer.js.org/docs)
+### Contributors
+
+<a href="https://github.com/MoePlayer/DPlayer/graphs/contributors"><img src="https://opencollective.com/DPlayer/contributors.svg?width=890" /></a>
 
 ## Join the Discussion
 
 - [Telegram Group](https://t.me/adplayer)
-- [QQ Group](https://shang.qq.com/wpa/qunwpa?idkey=bf22213ae0028a82e5adf3f286dfd4f01e0997dc9f1dcd8e831a0a85e799be17): 415835947
 
 ## Related Projects
 
-- [DPlayer-backend](https://github.com/DIYgod/DPlayer-backend)
-- [DPlayer-data(weekly backup for api.prprpr.me/dplayer)](https://github.com/DIYgod/DPlayer-data)
-- [DPlayer-for-typecho](https://github.com/volio/DPlayer-for-typecho)
-- [Hexo-tag-dplayer](https://github.com/NextMoe/hexo-tag-dplayer)
-- [DPlayer_for_Z-BlogPHP](https://github.com/fghrsh/DPlayer_for_Z-BlogPHP)
-- [纸飞机视频区插件(DPlayer for Discuz!)](https://coding.net/u/Click_04/p/video/git)
-- [dplayer_py_backend](https://github.com/dixyes/dplayer_py_backend)
-- [dplayer_lua_backend](https://github.com/dixyes/dplayer_lua_backend)
-- [DPlayer for WordPress](https://github.com/BlueCocoa/DPlayer-WordPress)
-- [Vue-DPlayer](https://github.com/sinchang/vue-dplayer)
-- Feel free to submit yours in [`Let me know!`](https://github.com/DIYgod/DPlayer/issues/31)
+Feel free to submit yours in [`Let me know!`](https://github.com/MoePlayer/DPlayer/issues/31)
+
+### Tooling
+
+- [DPlayer-thumbnails](https://github.com/MoePlayer/DPlayer-thumbnails): generate video thumbnails
+
+### Danmaku api
+
+- [DPlayer-node](https://github.com/MoePlayer/DPlayer-node): Node.js
+- [laravel-danmaku](https://github.com/MoePlayer/laravel-danmaku): PHP
+- [dplayer-live-backend](https://github.com/Izumi-kun/dplayer-live-backend): Node.js, WebSocket live backend
+- [RailsGun](https://github.com/MoePlayer/RailsGun): Ruby
+
+### Plugins
+
+- [DPlayer-for-typecho](https://github.com/volio/DPlayer-for-typecho): Typecho
+- [Hexo-tag-dplayer](https://github.com/NextMoe/hexo-tag-dplayer): Hexo
+- [DPlayer_for_Z-BlogPHP](https://github.com/fghrsh/DPlayer_for_Z-BlogPHP): Z-BlogPHP
+- [DPlayer for Discuz!](https://coding.net/u/Click_04/p/video/git): Discuz!
+- [DPlayer for WordPress](https://github.com/BlueCocoa/DPlayer-WordPress): WordPress
+- [DPlayerHandle](https://github.com/kn007/DPlayerHandle): WordPress
+- [Vue-DPlayer](https://github.com/sinchang/vue-dplayer): Vue
+- [react-dplayer](https://github.com/hnsylitao/react-dplayer): React
+
+### Other
+
+- [DPlayer-Lite](https://github.com/kn007/DPlayer-Lite): lite version
+- [hlsjs-p2p-engine](https://github.com/cdnbye/hlsjs-p2p-engine)
+- Feel free to submit yours in [`Let me know!`](https://github.com/MoePlayer/DPlayer/issues/31)
 
 ## Who use DPlayer?
 
-- [Anotherhome](https://www.anotherhome.net/2648)
-- [嘀哩嘀哩](http://www.dilidili.wang/)
-- [息萌](http://ximeng.co/)
-- [TALD](https://github.com/maysrp/TALD)
-- [webdir](https://github.com/maysrp/webdir)
-- [0xBBC](https://blog.0xbbc.com/2016/09/dplayer-for-wordpress/)
-- [树洞](https://aoaoao.me/1031.html)
-- [FGHRSH的博客](https://www.fghrsh.net/post/57.html)
-- [银色子弹](https://www.sbsub.com/)
-- [妖气山弹幕网](http://www.m173.tv/)
-- [御宅同萌 – 聖域](https://wp.acg-moe.com/)
-- [動漫御宅堂](http://syu65406.tw/anime/)
-- [纸飞机南航青年网络社区](http://my.nuaa.edu.cn/video-video.html)
-- [otomads](https://otomads.com/)
-- Feel free to submit yours in [`Let me know!`](https://github.com/DIYgod/DPlayer/issues/31)
-
-## CDN
-
-- [unpkg](https://unpkg.com/dplayer)
-- [cdnjs](https://cdnjs.com/libraries/dplayer)
-- [BootCDN](http://www.bootcdn.cn/dplayer/)
-- [RawGit](https://rawgit.com/DIYgod/DPlayer/master/dist/DPlayer.min.js)
+- [小红书](https://www.xiaohongshu.com/): 中国最大的生活社区分享平台，同时也是发现全球好物的电商平台
+- [极客时间](https://time.geekbang.org/): 极客邦科技出品的一款 IT 内容知识服务 App
+- [嘀哩嘀哩](http://www.dilidili.wang/): 兴趣使然的无名小站（D站）
+- [银色子弹](https://www.sbsub.com/): 银色子弹，简称银弹，由多数柯南热爱者聚集在一起的组织
+- [浙江大学CC98论坛](https://zh.wikipedia.org/wiki/CC98%E8%AE%BA%E5%9D%9B): 浙江大学校网内规模最大的论坛，中国各大学中较活跃的BBS之一
+- [纸飞机南航青年网络社区](http://my.nuaa.edu.cn/video-video.html): 南京航空航天大学门户网站
+- [otomads](https://otomads.com/): 专注于音MAD的视频弹幕网站
+- [Cloudreve](https://github.com/HFO4/Cloudreve): 基于ThinkPHP构建的网盘系统
+- [oneindex](https://github.com/donwa/oneindex): Onedrive Directory Index
+- Feel free to submit yours in [`Let me know!`](https://github.com/MoePlayer/DPlayer/issues/31)
 
 ## Donate
 
-- [Donate via Paypal](https://www.paypal.me/DIYgod)
-- [Donate via WeChat Pay](https://ws4.sinaimg.cn/large/006tKfTcgy1fhu1uowywej307s07st8h.jpg)
-- [Donate via Alipay](https://ws4.sinaimg.cn/large/006tKfTcgy1fhu1vf4ih7j307s07sdfm.jpg)
-- Donate via Bitcoin: 13CwQLHzPYm2tewNMSJBeArbbRM5NSmCD1
+DPlayer is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing.
 
+## One-time Donations
+
+We accept donations through these channels:
+
+- [Paypal](https://www.paypal.me/DIYgod)
+- [WeChat Pay](https://i.imgur.com/aq6PtWa.png)
+- [Alipay](https://i.imgur.com/wv1Pj2k.png)
+- Bitcoin: 13CwQLHzPYm2tewNMSJBeArbbRM5NSmCD1
+
+## Recurring Pledges
+
+Recurring pledges come with exclusive perks, e.g. enabling faster GitHub response, having your name or your company logo listed in the DPlayer GitHub repository and this website.
+
+- Become a backer or sponsor via [Patreon](https://www.patreon.com/DIYgod)
+- E-mail us: i#html.love
 
 ## Author
 
 **DPlayer** © [DIYgod](https://github.com/DIYgod), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by DIYgod with help from contributors ([list](https://github.com/DIYgod/DPlayer/contributors)).
 
-> Blog [@Anotherhome](https://www.anotherhome.net) · GitHub [@DIYgod](https://github.com/DIYgod) · Twitter [@DIYgod](https://twitter.com/DIYgod) · Weibo [@DIYgod酱](http://weibo.com/anotherhome) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)
+> [Blog](https://diygod.me) · GitHub [@DIYgod](https://github.com/DIYgod) · Twitter [@DIYgod](https://twitter.com/DIYgod) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)

@@ -2,6 +2,46 @@ body {
     max-width: 700px;
     margin: 0 auto;
     padding: 45px 10px;
+    position: relative;
+}
+
+.show-dialog {
+    cursor: pointer;
+    border: 1px solid #f00;
+    width: 120px;
+    height: 40px;
+    line-height: 40px!important;
+    text-align: center;
+    border-radius: 4px;
+}
+.float-dplayer {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.dplayer-container {
+    width: 700px;
+    height: 358px;
+    border: 1px solid #f00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-dialog {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 40px!important;
+    font-weight: normal!important;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
 }
 
 .example {
@@ -13,7 +53,7 @@ body {
     border: 1px solid #ddd;
 }
 
-@media (max-width: 500px) {
+@media (max-width:500px) {
     .example {
         padding: 39px 10px 14px;
     }
@@ -74,7 +114,6 @@ body {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 110px;
     height: 40px;
     font-size: 14px;
     margin: 0 0 10px;
@@ -86,6 +125,18 @@ summary {
     outline: none;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+#events {
+    font-size: 12px;
+    margin-top: 5px;
+    height: 120px;
+    overflow: scroll;
+}
+
+#events p {
+    margin: 0;
+    line-height: 17px;
 }
 
 /* github-corner */
@@ -108,141 +159,15 @@ summary {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width:500px) {
     .github-corner:hover .octo-arm {
         animation: none
     }
-
     .github-corner .octo-arm {
         animation: octocat-wave 560ms ease-in-out
     }
 }
 
 /* modernizr */
-.adownload li.adownload {
-    color: green;
-}
-
-.canvas li.canvas {
-    color: green;
-}
-
-.cssanimations li.cssanimations {
-    color: green;
-}
-
-.csstransforms li.csstransforms {
-    color: green;
-}
-
-.documentfragment li.documentfragment {
-    color: green;
-}
-
-.fullscreen li.fullscreen {
-    color: green;
-}
-
-.localstorage li.localstorage {
-    color: green;
-}
-
-.svg li.svg {
-    color: green;
-}
-
-.texttrackapi li.texttrackapi {
-    color: green;
-}
-
-.track li.track {
-    color: green;
-}
-
-.todataurljpeg li.todataurljpeg {
-    color: green;
-}
-
-.todataurlpng li.todataurlpng {
-    color: green;
-}
-
-.todataurlwebp li.todataurlwebp {
-    color: green;
-}
-
-.video li.video {
-    color: green;
-}
-
-.websockets li.websockets {
-    color: green;
-}
-
-.setclasses li.setclasses {
-    color: green;
-}
-
-.no-adownload li.adownload {
-    color: red;
-}
-
-.no-canvas li.canvas {
-    color: red;
-}
-
-.no-cssanimations li.cssanimations {
-    color: red;
-}
-
-.no-csstransforms li.csstransforms {
-    color: red;
-}
-
-.no-documentfragment li.documentfragment {
-    color: red;
-}
-
-.no-fullscreen li.fullscreen {
-    color: red;
-}
-
-.no-localstorage li.localstorage {
-    color: red;
-}
-
-.no-svg li.svg {
-    color: red;
-}
-
-.no-texttrackapi li.texttrackapi {
-    color: red;
-}
-
-.no-track li.track {
-    color: red;
-}
-
-.no-todataurljpeg li.todataurljpeg {
-    color: red;
-}
-
-.no-todataurlpng li.todataurlpng {
-    color: red;
-}
-
-.no-todataurlwebp li.todataurlwebp {
-    color: red;
-}
-
-.no-video li.video {
-    color: red;
-}
-
-.no-websockets li.websockets {
-    color: red;
-}
-
-.no-setclasses li.setclasses {
-    color: red;
-}
+.adownload li.adownload{ color: green; }.canvas li.canvas{ color: green; }.cssanimations li.cssanimations{ color: green; }.csstransforms li.csstransforms{ color: green; }.documentfragment li.documentfragment{ color: green; }.fullscreen li.fullscreen{ color: green; }.localstorage li.localstorage{ color: green; }.svg li.svg{ color: green; }.texttrackapi li.texttrackapi{ color: green; }.track li.track{ color: green; }.todataurljpeg li.todataurljpeg{ color: green; }.todataurlpng li.todataurlpng{ color: green; }.todataurlwebp li.todataurlwebp{ color: green; }.video li.video{ color: green; }.websockets li.websockets{ color: green; }.setclasses li.setclasses{ color: green; }
+.no-adownload li.adownload{ color: red; }.no-canvas li.canvas{ color: red; }.no-cssanimations li.cssanimations{ color: red; }.no-csstransforms li.csstransforms{ color: red; }.no-documentfragment li.documentfragment{ color: red; }.no-fullscreen li.fullscreen{ color: red; }.no-localstorage li.localstorage{ color: red; }.no-svg li.svg{ color: red; }.no-texttrackapi li.texttrackapi{ color: red; }.no-track li.track{ color: red; }.no-todataurljpeg li.todataurljpeg{ color: red; }.no-todataurlpng li.todataurlpng{ color: red; }.no-todataurlwebp li.todataurlwebp{ color: red; }.no-video li.video{ color: red; }.no-websockets li.websockets{ color: red; }.no-setclasses li.setclasses{ color: red; }
