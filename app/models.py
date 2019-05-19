@@ -278,21 +278,20 @@ class Adminlog(db.Model):
     def __repr__(self):
         return '<Adminlog %r>' % self.id
 
-
-if __name__ == '__main__':
-    db.drop_all()
-    db.create_all()
-    role = Role(
-        name='超级管理员',
-        auths=''
-    )
-    db.session.add(role)
-    db.session.commit()
-    admin = Admin(
-        name='admin',
-        pwd=generate_password_hash('111111'),
-        is_super=0,
-        role_id=1
-    )
-    db.session.add(admin)
-    db.session.commit()
+# if __name__ == '__main__':
+#     db.drop_all()
+#     db.create_all()
+#     role = Role(
+#         name='超级管理员',
+#         auths=''
+#     )
+#     db.session.add(role)
+#     db.session.commit()
+#     admin = Admin(
+#         name='admin',
+#         pwd=generate_password_hash('111111'),
+#         is_super=0,
+#         role_id=1
+#     )
+#     db.session.add(admin)
+#     db.session.commit()
