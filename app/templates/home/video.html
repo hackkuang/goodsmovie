@@ -195,6 +195,12 @@
     <script>
         var dp1 = new DPlayer({
             element: document.getElementById('dplayer1'),
+            autoplay: false,
+            theme: '#FADFA3',
+            loop: false,
+            screenshot: true,
+            hotkey: false,
+            logo: '{{ url_for('static',filename='uploads/logo/'+movie.logo }}',
             video: {
                 url: "{{ url_for('static',filename='uploads/movie/'+movie.url) }}",
             },
